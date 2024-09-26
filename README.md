@@ -1,5 +1,5 @@
 # jLLM
-Un modelo de lenguaje para Java.<br>
+Un modelo de lenguaje n-gramas para Java.<br>
 El entrenamiento fue realizado utilizando como conjunto de datos:
 * <b>La Biblia</b> (Reina Valera), edición 1960
 * <b>Diccionario de la RAE</b> (Real Academia Española), edición de 2023
