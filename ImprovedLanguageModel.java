@@ -32,13 +32,15 @@ public class ImprovedLanguageModel implements Serializable {
             tokens = validTokens.toArray(new String[0]);
 
             for (int i = 0; i < tokens.length - n + 1; i++) {
-                String[] nGram = Arrays.copyOfRange(tokens, i, i + n);
-                String context = String.join(" ", Arrays.copyOfRange(nGram, 0, n - 1));
-                String nextToken = nGram[n - 1];
+                for (int j = 1; j <= n; j++) {
+                    String[] nGram = Arrays.copyOfRange(tokens, i, i + j);
+                    String context = String.join(" ", Arrays.copyOfRange(nGram, 0, j - 1));
+                    String nextToken = nGram[j - 1];
 
-                // Aquí fusionamos los conteos existentes con los nuevos
-                nGramCounts.putIfAbsent(context, new HashMap<>());
-                nGramCounts.get(context).put(nextToken, nGramCounts.get(context).getOrDefault(nextToken, 0) + 1);
+                    // Aquí fusionamos los conteos existentes con los nuevos
+                    nGramCounts.putIfAbsent(context, new HashMap<>());
+                    nGramCounts.get(context).put(nextToken, nGramCounts.get(context).getOrDefault(nextToken, 0) + 1);
+                }
             }
         }
         System.out.println("Total n-grams generados: " + nGramCounts.size());
@@ -137,7 +139,7 @@ public class ImprovedLanguageModel implements Serializable {
             // Añadir un número de versión al archivo
             oos.writeInt(version); // Versión 1
             oos.writeObject(nGramCounts);
-            System.out.println("Modelo guardado exitosamente con versión: " + version + ".");
+            System.out.println("Modelo guardado exitosamente con versión.");
             System.out.println("Datos guardados: " + nGramCounts.size() + " tokens.");
         }
 
