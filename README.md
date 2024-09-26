@@ -9,6 +9,7 @@ El entrenamiento fue realizado utilizando como conjunto de datos:
 * <b>Coriolano</b> (Tragedia de William Shakespare), en Inglés.
 
 # ¿Qué hace?
+* Basado en un modelo de bi-grama (2)
 * Genera textos basado en los conjuntos de datos.
 * Comprime el modelo utilizando formato ZIP compatible para disminuir tamaño.
 * Carga un modelo existente (creado por la aplicación).
@@ -18,7 +19,11 @@ El entrenamiento fue realizado utilizando como conjunto de datos:
 
 # ¿Qué tiene pendiente?
 * <b>Aumentar entrenamiento:</b> incluir más conjuntos de datos en texto plano.
-* <b>Mejorar:</b> el algoritmo de generación de textos.
+* <b>Mejorar:</b>
+  - el algoritmo de generación de textos.
+  - aumentar el número de n-gramas a un monto variable indefinido (modelo de lenguaje de orden variable).
+  - utilizar técnicas de suavizado.
+  - considerar modelos de lenguaje más sofisticados basados en RNA o RNN (LSTM o GRU).
 * <b>Interfaz gráfica:</b> desarrollar una interfaz gráfica para facilitar el uso del programa a aquellos que gustan de esta funcionalidad existente en modo consola (texto).
 * <b>Integración:</b> permitir la interacción con modelos grandes (LLM) existentes en caso de requerir utilizarlos.
 * <b>Optimización:</b> depurar el código para hacerlo más limpio, legible y robusto.
