@@ -23,7 +23,7 @@ El entrenamiento fue realizado utilizando como conjunto de datos:
   - el algoritmo de generación de textos.
   - aumentar el número de n-gramas a un monto variable indefinido (modelo de lenguaje de orden variable).
   - utilizar técnicas de suavizado.
-  - considerar modelos de lenguaje más sofisticados basados en RNA o RNN (LSTM o GRU).
+  - considerar modelos de lenguaje más sofisticados basados en RNA o RNN (LSTM o GRU) o en transformadores (BERT).
 * <b>Interfaz gráfica:</b> desarrollar una interfaz gráfica para facilitar el uso del programa a aquellos que gustan de esta funcionalidad existente en modo consola (texto).
 * <b>Integración:</b> permitir la interacción con modelos grandes (LLM) existentes en caso de requerir utilizarlos.
 * <b>Optimización:</b> depurar el código para hacerlo más limpio, legible y robusto.
