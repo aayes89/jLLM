@@ -1,2 +1,31 @@
 # jLLM
-Un modelo de lenguaje para Java
+Un modelo de lenguaje para Java.<br>
+El entrenamiento fue realizado utilizando como conjunto de datos:
+* <b>La Biblia</b> (Reina Valera), edición 1960
+* <b>Diccionario de la RAE</b> (Real Academia Española), edición de 2023
+* <b>Novelas ligeras variadas</b>, en Español
+* <b>El Evangelio segun Marcos</b>
+* <b>El Quijote</b>, de Miguel de Cervantes Saavedra
+* <b>Coriolano</b> (Tragedia de William Shakespare), en Inglés.
+
+# ¿Qué hace?
+* Genera textos basado en los conjuntos de datos.
+* Comprime el modelo utilizando formato ZIP compatible para disminuir tamaño.
+* Carga un modelo existente (creado por la aplicación).
+* Guarda el modelo entrenado en un fichero comprimido compatible con formato ZIP.
+* Evita redundancia en los conjuntos de datos (evita repetiición de información en el modelo).
+* Manejo de errores y excepciones.
+
+# ¿Qué tiene pendiente?
+* <b>Aumentar entrenamiento:</b> incluir más conjuntos de datos en texto plano.
+* <b>Mejorar:</b> el algoritmo de generación de textos.
+* <b>Interfaz gráfica:</b> desarrollar una interfaz gráfica para facilitar el uso del programa a aquellos que gustan de esta funcionalidad existente en modo consola (texto).
+* <b>Integración:</b> permitir la interacción con modelos grandes (LLM) existentes en caso de requerir utilizarlos.
+* <b>Optimización:</b> depurar el código para hacerlo más limpio, legible y robusto.
+
+# Información
+Si gusta apoyar con el proyecto, no dude en dejar su comentario o abrir nuevas instancias para mejorar el proyecto.
+
+# Agradecimientos
+A mi esposa: por ser tolerante con el tiempo que he dedicado a realizar este proyecto. 
+
